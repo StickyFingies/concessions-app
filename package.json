@@ -1,0 +1,15 @@
+{
+  "name": "concessions-app",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "https://github.com/stickyfingies/concessions-app",
+  "author": "StickyFingies <sethtraman@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+	  "start": "node --experimental-modules --es-module-specifier-resolution=node src/app.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

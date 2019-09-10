@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="//unpkg.com/onsenui/css/onsenui.css">
+	<link rel="stylesheet" href="//unpkg.com/onsenui/css/onsen-css-components.min.css">
+</head>
+<body>
+	<ons-splitter>
+		<ons-splitter-side id="menu" side="right" width="80%" collapse swipeable>
+			<ons-page>
+				<br/>
+				<ons-list id="reciept" modifier="inset">
+					<ons-list-header>
+						Reciept
+					</ons-list-header>
+					<ons-list-item tappable>
+						<div class="left">
+							<p>1</p>
+						</div>
+						Hot Dog
+					</ons-list-item>
+					<ons-list-item tappable>
+						<div class="left">
+							<p>2</p>
+						</div>
+						Candy Bar
+					</ons-list-item>
+					<ons-list-item tappable>
+						<div class="left">
+							<p>3</p>
+						</div>
+						Water
+					</ons-list-item>
+					<ons-list-header>
+						Actions
+					</ons-list-header>
+					<ons-list-item id="checkout" tappable modifier="chevron">
+						<div class="left">
+							<ons-icon icon="md-check" class="list-item__icon"></ons-icon>
+						</div>
+						Check Out
+					</ons-list-item>
+				</ons-list>
+			</ons-page>
+		</ons-splitter-side>
+		<ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+	</ons-splitter>
+
+	<template id="home.html">
+		<ons-page>
+			<ons-tabbar swipeable position="auto">
+				<ons-tab page="food.html" icon="fa-utensils" active></ons-tab>
+				<ons-tab page="drinks.html" icon="fa-wine-glass-alt"></ons-tab>
+				<ons-tab page="candy.html" icon="fa-candy-cane"></ons-tab>
+			</ons-tabbar>
+		</ons-page>
+	</template>
+
+	<template id="food.html">
+		<ons-page>
+			<br/>
+			<ons-list class="concessions-menu" modifier="inset">
+				<ons-list-item tappable>
+					Hot Dog
+					<div class="right">
+						$2.99
+					</div>
+				</ons-list-item>
+				<ons-list-item tappable>
+						Hamburger
+						<div class="right">
+							$3.50
+						</div>
+					</ons-list-item>
+			</ons-list>
+		</ons-page>
+	</template>
+
+	<template class="foo" is="auto-binding" id="drinks.html">
+		<ons-page>
+				<br/>
+				<ons-list class="concessions-menu" modifier="inset">
+					<ons-list-item tappable>
+						Water
+						<div class="right">
+							$0.99
+						</div>
+					</ons-list-item>
+					<ons-list-item tappable>
+							Pepsi
+							<div class="right">
+								$1.99
+							</div>
+					</ons-list-item>
+				</ons-list>
+		</ons-page>
+	</template>
+
+	<template id="candy.html">
+		<ons-page>
+			<br/>
+			<ons-list class="concessions-menu" modifier="inset">
+				<ons-list-item tappable>
+					Starburst
+					<div class="right">
+						$2.99
+					</div>
+				</ons-list-item>
+				<ons-list-item tappable>
+						M&M's
+						<div class="right">
+							$99
+						</div>
+				</ons-list-item>
+			</ons-list>
+		</ons-page>
+	</template>
+
+	<script src="./index.js?t=0"></script>
+	<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</body>
+</html>
