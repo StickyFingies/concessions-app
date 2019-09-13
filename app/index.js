@@ -56,7 +56,7 @@ function Get(yourUrl) {
 }
 
 window.onload = () => {
-    const menuItems = JSON.parse(Get("http://73.45.197.151:8080/menu"));
+    const menuItems = JSON.parse(Get("./menu"));
 
     setTimeout(() => {
         let foodMenu = document.getElementById("food-menu");
