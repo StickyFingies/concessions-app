@@ -16,7 +16,7 @@ MongoClient.connect(url, (err, db) => {
     concessionsDb = db;
 });
 
-app.use(express.static("static"));
+app.use(express.static("app"));
 
 app.get("/menu", (req, res) => {
     let dbo = concessionsDb.db("lths_concessions_app");
