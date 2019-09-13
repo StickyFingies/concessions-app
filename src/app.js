@@ -76,7 +76,7 @@ app.use((req, res, next) => {
 	res.sendStatus(404);
 });
 
-app.listen(8080, (err) => {
+app.listen((process.env.PORT || 8080), (err) => {
 	if (err) {
 		console.log(err);
 		process.exit(1);
