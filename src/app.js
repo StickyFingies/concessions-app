@@ -1,7 +1,7 @@
 "use strict";
 
-import express from "express";
-import mongodb from "mongodb";
+const express = require("express");
+const mongodb = require("mongodb");
 
 const app = express();
 
